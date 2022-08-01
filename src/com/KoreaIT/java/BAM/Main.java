@@ -1,18 +1,15 @@
 package com.KoreaIT.java.BAM;
 
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class Main {
-	public static void main(String[] args) {
-		System.out.println("==프로그램 시작==");
+import com.KoreaIT.java.BAM.dto.Article;
+import com.KoreaIT.java.BAM.util.Util;
 
-		Scanner sc = new Scanner(System.in);
-
-		String command = sc.nextLine();
-
-		System.out.printf("입력된 명령어 : %s\n", command);
-
-		System.out.println("==프로그램 끝==");
-		sc.close();
+public class Main{
+	public static void main(String[]args) {
+		new App().run();
 	}
 }
